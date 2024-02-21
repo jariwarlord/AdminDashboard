@@ -4,7 +4,7 @@ import {TooltipComponent} from '@syncfusion/ej2-react-popups';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {Navbar, Footer, Sidebar, ThemeSettings} from'./components';
 import {Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid
-, Customers, Kanban, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor} from './pages';
+, Customers, Kanban, Area, Bar, Pie, Financial,Line, ColorPicker, ColorMapping, Editor} from './pages';
 import './App.css'
 
 const App = () => {
@@ -48,7 +48,7 @@ const App = () => {
           </div>  
           <div>
             <Routes>
-              <Route path="/" element={<Ecommerce/>} />
+              <Route path="/" element={<Ecommerce />} />
               <Route path="/ecommerce" element={<Ecommerce/>} />
 
               <Route path="/orders" element={<Orders/>} />
@@ -60,14 +60,14 @@ const App = () => {
               <Route path="/calender" element={<Calendar/>} />
               <Route path="/color-picker" element={<ColorPicker/>} />
 
-              <Route path="/line" element="Line"/>
-              <Route path="/area" element="Area"/>
-              <Route path="/bar" element="Bar"/>
-              <Route path="/pie" element="Financial"/>
-              <Route path="/financial" element="Financial"/>
-              <Route path="/color-mapping" element="ColorMapping"/>
-              <Route path="/pyramid" element="Pyramid"/>
-              <Route path="/stacked" element="Stacked"/>
+              <Route path="/line" element={<Line/>} />
+              <Route path="/area" element={<Area/>} />
+              <Route path="/bar" element={<Bar/> } />
+              <Route path="/pie" element={<Financial/>} />
+              <Route path="/financial" element={<Financial/>} />
+              <Route path="/color-mapping" element={<ColorMapping/>} />
+              <Route path="/pyramid" element={<Pyramid/>} />
+              <Route path="/stacked" element={<Stacked/>} />
 
 
 
